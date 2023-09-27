@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface IContactService {
     //CRUD Operations
-    ContactDto queryProduct(ContactDto product);
-    List<ContactDto> queryAllProducts();
-    int insertProduct(ContactDto product);
-    int updateProduct(ContactDto product);
-    int deleteProduct(ContactDto product);
+    ContactDto queryContact(ContactDto contact);
+    List<ContactDto> queryAllContacts();
+    int insertContact(ContactDto contact);
+    int updateContact(ContactDto contact);
+    int deleteContact(ContactDto contact);
 }
