@@ -2,11 +2,9 @@ package com.campusdual.appmazing.service;
 
 import com.campusdual.appmazing.api.IContactService;
 import com.campusdual.appmazing.model.Contact;
-import com.campusdual.appmazing.model.Product;
 import com.campusdual.appmazing.model.dao.ContactDao;
 import com.campusdual.appmazing.model.dto.ContactDto;
 import com.campusdual.appmazing.model.dto.dtomapper.ContactMapper;
-import com.campusdual.appmazing.model.dto.dtomapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
