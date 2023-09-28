@@ -38,5 +38,11 @@ public class ProductController {
     public List<ProductDto> queryAllProducts(){return this.productService.queryAllProducts();}
 
     @PostMapping(value = "/add")
-    public int addProduct(@RequestBody ProductDto productDto){return this.productService.insertProduct(productDto);}
+    public int insertProduct(@RequestBody ProductDto productDto){return this.productService.insertProduct(productDto);}
+
+    @PutMapping(value = "/update")
+    public int updateProduct(@RequestBody ProductDto productDto){return this.productService.updateProduct(productDto);}
+
+    @DeleteMapping(value = "/delete")
+    public int deleteProduct(@RequestBody ProductDto productDto){return this.productService.deleteProduct(productDto);}
 }
