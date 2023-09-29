@@ -1,5 +1,7 @@
 package com.campusdual.appmazing.model.dto;
 
+import com.campusdual.appmazing.model.Category;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -11,6 +13,7 @@ public class ProductDto {
     private BigDecimal price;
     private boolean active;
     private Date date_added;
+    private CategoryDto categoryDto;
 
     public int getId() {
         return id;
@@ -58,5 +61,13 @@ public class ProductDto {
 
     public void setDate_added(Date date_added) {
         this.date_added = date_added;
+    }
+
+    public CategoryDto getCategoryDto() {
+        return this.categoryDto;
+    }
+
+    public void setCategoryDto(CategoryDto categoryDto) {
+        this.categoryDto = categoryDto;
     }
 }
