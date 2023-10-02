@@ -45,4 +45,9 @@ public class ProductController {
 
     @DeleteMapping(value = "/delete")
     public int deleteProduct(@RequestBody ProductDto productDto){return this.productService.deleteProduct(productDto);}
+
+    @PutMapping(value= "/buy")
+    public int buyProduct(@RequestBody ProductDto productDto) {
+        return this.productService.buyProduct(productDto,5);
+    }
 }
