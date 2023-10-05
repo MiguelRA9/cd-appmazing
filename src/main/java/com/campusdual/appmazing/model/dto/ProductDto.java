@@ -13,7 +13,7 @@ public class ProductDto {
     private BigDecimal price;
     private boolean active;
     private Date date_added;
-    private CategoryDto categoryDto;
+    private CategoryDto category;
 
     public int getId() {
         return id;
@@ -63,11 +63,11 @@ public class ProductDto {
         this.date_added = date_added;
     }
 
-    public CategoryDto getCategoryDto() {
-        return this.categoryDto;
+    public CategoryDto getCategory() {
+        return category;
     }
 
-    public void setCategoryDto(CategoryDto categoryDto) {
-        this.categoryDto = categoryDto;
+    public void setCategory(CategoryDto category) {
+        this.category = category;
     }
 }
