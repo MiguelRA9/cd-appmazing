@@ -1,6 +1,7 @@
 package com.campusdual.appmazing.api;
 
 import com.campusdual.appmazing.model.dto.ContactDto;
+import com.campusdual.appmazing.model.dto.ProductDto;
 
 import java.util.List;
 
